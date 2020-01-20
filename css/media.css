@@ -1,0 +1,150 @@
+@media (max-width: 767px) {
+	
+	.logo .link {
+		font-size: 15px;
+	}
+	
+	.header {
+		position: relative;
+		padding: 0 30px;
+	}
+
+	.nav {
+		position: absolute;
+		z-index: 99;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		background-color: white;
+		transform: scaleY(0);
+		transform-origin: 0 0;
+		transition: transform 1s ease;	
+		opacity: 0;		
+	}
+
+	.nav.active {
+		transform: scaleY(1);
+		opacity: 1;
+	}
+
+	.nav-list {		
+		display: flex;	
+		flex-direction: column;		
+	}
+
+	.nav-list .link {
+		padding: 0 0 0 10px;
+	}
+
+	.nav-opener {
+		display: block;
+		float: right;	
+		background: white;
+		color: black;
+		border: 0;	
+		font-size: 16px;		
+	}
+
+	.lawyer {
+		height: calc(100vh - 300px);
+		padding: 30px;
+	}	
+
+	.lawyer-info {
+		margin: 0;
+	}	
+
+	.name {
+		font-size: 22px;
+	}
+
+	.btn .link {
+		padding: 5px 10px;		
+		font-size: 15px;
+	}
+
+	.post {
+		font-size: 15px;
+		padding: 0;
+	}
+
+	.section {
+		padding-left: 30px;
+	}
+
+	.row {
+		display: block;
+	}
+
+	.row-item, .row-item-second {
+		width: 100%;
+		margin: 75px auto;
+		padding: 0;
+	}
+
+	.meet-item {
+		width: 50%;
+		margin: 0 auto;	
+		margin-bottom: 75px;	
+	}
+	
+	.clients-item {		
+		flex-direction: column;		
+
+	}
+
+	.clients-img, .client-quote, .publications-item, .quest-list {
+		width: 50%;
+		margin: 0 auto;
+		margin-bottom: 75px;
+		padding: 0;
+	}
+
+	.client-quote {
+		padding-left: 90px;
+		padding-top: 30px;
+	}
+
+	.publications-list {
+		flex-direction: column;
+	}
+
+	.bg-footer {
+		padding: 0 30px;
+	}
+
+	.input-btn, .map {
+		width: 50%;
+		height: auto;
+	}
+
+	.contact-btn {
+		height: 30px;
+		width: 130px;
+	}
+
+	.contact-input, .message {
+		width: 230px;
+	}
+
+	
+}
+
+@media (max-width: 1023px) {
+	.lawyer-info {
+		margin: 0;
+	}	
+
+	.lawyer, .section, .footer {
+		padding: 30px;
+
+	}
+	
+	.row-item-second {
+		padding: 30px;
+	}
+
+	.contact-form {
+		width: 100%;
+	}
+}	
